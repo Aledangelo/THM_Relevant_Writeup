@@ -20,7 +20,7 @@ I encourage you to approach this challenge as an actual penetration test. Consid
 
 Note - Nothing in this room requires Metasploit
 
-### Link to the Romm
+### Link to the Room
 You can find this room [here](https://tryhackme.com/room/relevant).
 
 ## Writeup
